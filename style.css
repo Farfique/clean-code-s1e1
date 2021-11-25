@@ -49,11 +49,13 @@
   padding: 0px;
 }
 
-li, h3 { /* сброс стиля */
+li, 
+h3 { /* сброс стиля */
   list-style: none; 
 }
 
-input,button{ /* сброс стиля */
+input,
+button{ /* сброс стиля */
   outline: none;
 }
 
