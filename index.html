@@ -6,46 +6,46 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <header class="header">
-      <img class="header-image" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <header class="header page__header">
+      <img class="header__image" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
+      <a class="header__link header__link_more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section class="add-section" id="add-task">
-        <h3 class="new-task-header">Add Item</h3>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="task task-input" type="text">
-          <button class="button add">Add</button>
+      <section class="section add-section">
+        <h3 class="section__header add-section__header">Add Item</h3>
+        <div class="add-section__content">
+          <input class="add-section__input text-input" type="text">
+          <button class="add-section__button button button-add">Add</button>
         </div>
       </section>
-      <section class="todo-section"></section>
-        <h3 class="list-header">Todo</h3>
-        <ul class="task-list" id="incomplete-tasks">
-          <li class="task-item">
-            <input class="done-input" type="checkbox">
-            <label class="task task-label">Pay Bills</label>
-            <input type="text" class="task task-input">
-            <button class="button edit">Edit</button>
-            <button class="button delete">Delete</button>
+      <section class="section section_todo"></section>
+        <h3 class="section__header">Todo</h3>
+        <ul class="section__list task-list todo-list">
+          <li class="task-list__item">
+            <input class="task-list__checkbox" type="checkbox">
+            <label class="task-list__title ">Pay Bills</label>
+            <input class="task-list__input text-input" type="text">
+            <button class="button button-edit">Edit</button>
+            <button class="button button-delete">Delete</button>
           </li>
-          <li class="edit-mode task-item">
-            <input class="done-input" type="checkbox">
-            <label class="task task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task task-input">
-            <button class="button edit">Save</button>
-            <button class="button delete">Delete</button>
+          <li class="edit-mode task-list__item">
+            <input class="task-list__checkbox" type="checkbox">
+            <label class="task-list__title">Go Shopping</label>
+            <input class="task-list__input text-input" type="text" value="Go Shopping">
+            <button class="button button-edit">Save</button>
+            <button class="button button-delete">Delete</button>
           </li>
         </ul>
       </section>
-      <section class="completed-section"></section>
-        <h3 class="list-header">Completed</h3>
-        <ul class="task-list" id="completed-tasks">
-          <li class="task-item">
-            <input class="done-input" type="checkbox" checked>
-            <label class="task task-label">See the Doctor</label>
-            <input type="text" class="task task-input">
-            <button class="button edit">Edit</button>
-            <button class="button delete">Delete</button>
+      <section class="section section_completed"></section>
+        <h3 class="section__header">Completed</h3>
+        <ul class="section__list task-list done-list">
+          <li class="task-list__item">
+            <input class="task-list__checkbox" type="checkbox" checked>
+            <label class="task-list__title">See the Doctor</label>
+            <input class="task-list__input text-input" type="text">
+            <button class="button button-edit">Edit</button>
+            <button class="button button-delete">Delete</button>
           </li>
         </ul>
       </section>
